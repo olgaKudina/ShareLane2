@@ -15,6 +15,7 @@ public class ErrorSignUp {
        driver.get("https://www.sharelane.com/cgi-bin/register.py"); //открыть браузер
        driver.findElement(By.name("zip_code")).sendKeys("222222");
        driver.findElement(By.xpath("//*[@value='Continue']")).click();
+       driver.findElement(By.xpath("//*[@value='Continue']")).click();
 
        driver.findElement(By.xpath("//*[@value='Register']")).click();
        driver.findElement(By.className("error_message"));
